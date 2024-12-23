@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Smart Device"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_device_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:prompt="@string/device_type_prompt"/>
+
+    <Button
+        android:id="@+id/btn_start_discovery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Device Discovery"
+        android:layout_marginBottom="16dp"/>
+
+    <ListView
+        android:id="@+id/list_discovered_devices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

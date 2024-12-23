@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SmartHome</string>
+    <string name="device_type_prompt" />
+</resources>

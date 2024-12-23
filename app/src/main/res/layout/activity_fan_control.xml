@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/image_device_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_fan"/>
+
+        <TextView
+            android:id="@+id/text_device_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <Switch
+            android:id="@+id/switch_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fan Speed"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_intensity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="3"
+        android:progress="0"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oscillation"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"/>
+
+    <Switch
+        android:id="@+id/switch_oscillation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable Oscillation"/>
+</LinearLayout>
